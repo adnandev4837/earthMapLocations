@@ -1,0 +1,222 @@
+/* html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #051747;
+	overflow-y: scroll;
+} */
+/* marker popup css */
+#markerTxt
+{
+	padding-left: 30px;
+}
+.infoLines
+{font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 29px;
+	display: flex;
+	color: #535F80;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+span.infoLinesText {
+    margin: 8px;
+}
+.markerButton
+{
+	text-decoration: none;
+	border: 2px solid #FFC100;
+	border-radius: 50px;
+	padding: 5px 0 7px 20px;
+	width: 40%;
+	font-family: 'Inter';
+	font-size: 29px;
+	display: flex;
+	color: #051747;
+}
+.markerHeading
+{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 33px;
+line-height: 32px;
+display: flex;
+align-items: center;
+color: #051747;
+}
+#markerBox {
+		position: absolute;
+		left: 20px;
+		top: -120px;
+		width: 470px;
+		/* height: 310px; */
+		background: white center center no-repeat;
+		border-radius: 9px;
+}
+.markerContent
+{
+	margin: 32px 0 32px 0;
+}
+div#markerBox::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 20px solid #FFFFFF;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    left: -18px;
+    top: calc(50% - (200px / 2));
+}
+
+#earth-map::after {
+	content: "";
+	position: absolute;
+	top: 15.85%;
+	left: 15.85%;
+	bottom: 15.85%;
+	right: 15.85%;
+	box-sizing: border-box;
+	/* border: 1px #D0D0D0 solid; */
+	box-shadow: 0 0 40px 0px lightblue;
+	border-radius: 50%;
+}
+
+
+#wrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	background-color:#F5F0F0 ;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100em;
+	font-family: sans-serif;
+/* 	min-height: 100vh; */
+}
+
+div#nav-menus {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    margin-top: 3%; 
+}
+
+.markerPoint
+{
+    width: 240px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    line-height: 1.6;
+    padding: 21px 0 17px 27px !important;
+    background-color: #49567A;
+    margin-left: 18px;
+
+
+
+}
+.markerPoint:hover {
+	background-color: #5ab4a7;
+	cursor: pointer;
+}
+
+.nav_heading {
+
+    font-size: 1.5em;
+    color: white;
+    line-height: 1;
+
+}
+.nav_sub_heading {
+    font-size: 0.9em;
+    cursor: pointer;
+    color: white;
+    line-height: 1;
+
+}
+.markerPoint:hover span.nav_sub_heading {
+	border: 1px solid #ffffff;
+    padding: 1px 3px 1px 3px;
+    border-radius: 5px;
+}
+
+/* mobile and tablet media queries */
+@media screen and (max-width: 768px) and (min-width: 320px){
+		
+	.markerPoint
+		{
+		width: 45% !important;
+		border-radius: 5px;
+    	line-height: 1;
+    	padding: 13px 0 12px 19px !important;
+    	background-color: #49567A;
+    	margin: 0 10px 10px 0;
+		}
+	.nav_heading {
+    font-size: 0.7em;
+    color: white;
+    line-height: 1;
+}
+	.nav_sub_heading {
+    font-size: 0.6em;
+    cursor: pointer;
+    color: white;
+    line-height: 1;
+}
+		.earth-container {
+			height: 280px !important;
+			width: 280px !important;
+		}
+}
+@media screen  and (min-width: 425px) and (max-width: 700px) {
+		.earth-container {
+			height: 350px !important;
+			width: 350px !important;
+		}
+}
+@media screen  and (min-width: 768px)  and (max-width: 1000px)  {
+		.earth-container {
+			height: 650px !important;
+			width: 650px !important;
+		}
+}
+/* media query for 1024 screen */
+@media screen and (min-width: 769px) and (max-width: 1600px){
+	.markerPoint
+		{
+		width: 31% !important;
+		border-radius: 5px;
+    	line-height: 1;
+    	padding: 13px 0 12px 19px !important;
+    	background-color: #49567A;
+    	margin: 0 10px 10px 0;
+		}
+	.nav_heading {
+    font-size: 0.8em;
+    color: white;
+    line-height: 1;
+}
+	.nav_sub_heading {
+    font-size: 0.7em;
+    cursor: pointer;
+    color: white;
+    line-height: 1;
+}
+  }
+
